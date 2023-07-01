@@ -1,0 +1,165 @@
+/*|| CSS RESET*/
+*,
+*::after,
+*::before {
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+ /*|| GENERAL STYLES*/
+body {
+    font-family: "Lato", sans-serif;
+    display: grid;
+    grid-template-columns: 300px auto;
+    grid-auto-rows: 100vh;
+    max-height: 100vh;
+    overflow: hidden;
+}
+.sidenav {
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+}
+.sidenav a {
+    color: gray;
+    text-decoration: none;
+    padding: 2rem;
+    text-align: center;
+    font-size: larger;
+    font-weight: bold;
+    margin-top: 2rem;
+}
+
+a:hover {
+    color: whitesmoke;
+}
+a:focus {
+    color: green;
+}
+
+.main-container {
+    display: flex;
+    flex-flow: column wrap;
+    background-image: linear-gradient(black,darkgrey);
+    color: whitesmoke;
+    position: relative;   
+    justify-content: center;
+    align-items: center;
+}
+
+/*|| CSS TITLE ANIMATION*/
+.title {
+    text-align: center;
+    padding: 0.5rem;
+    font-size: xx-large; 
+    position: absolute;
+    left:40%;
+    top: -100px;
+    background-image: linear-gradient(darkgrey,grey);
+    text-shadow:  2px 2px 5px black;
+    animation: showPageName 0.5s ease-in-out forwards 1s; 
+}
+@keyframes showPageName {
+    0% {
+        top:-30px;
+        transform: skew(0deg,-5deg) scale(1);
+    }
+    80% {
+        top:30px;
+        transform: skew(10deg,-5deg) scaleY(1);
+    }
+
+    100% {
+        top:25px;
+        transform: skew(-10deg,-5deg) scaleY(1);
+    }
+}
+
+.section {
+    position: absolute;
+    top: 20%;
+}
+
+
+/* ||Contact */
+
+.contact {
+    width:500px;
+    height: 500px;
+}
+
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+    font-size: 18px;
+  }
+input[type=submit] {
+    background-color: blue;
+    color: whitesmoke;
+    padding: 1rem;
+    border: none;
+    border-radius: 10%;
+    font-size: larger;
+    font-weight: bold;
+    cursor: pointer;
+}   
+
+/* || ABOUT */
+
+.card {
+    width: 400px;
+    background-color: aliceblue;
+    height: 450px;
+    color: black;   
+}
+.header {
+    text-align: center;
+    margin-top: 1rem   ;
+}
+
+.para {
+    text-align: center;
+    margin-top: 1rem;
+}
+.btn {
+    width: 100%;
+    margin-top: 1rem;
+    padding: 0.5rem;
+    background-color: blue;
+    color: whitesmoke;
+    font-size: larger;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+}
+
+/* || HOME */
+
+.home {
+    width:60%;
+    height: auto;
+}
+.row {
+    display: flex;
+}
+.intro {
+    padding:0 1rem 1rem 1rem;
+    line-height:1.5;
+}
+
+.description {
+    padding: 1rem;
+    line-height: 1.5;
+}
+
+/*|| Guide */
+
+.guide {
+    width: 50%;
+    line-height: 2.2;
+    font-size: large;
+}

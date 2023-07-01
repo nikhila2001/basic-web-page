@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <div class="sidenav">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+        <a href="guide.html">Guide</a>
+    </div>
+    <main class="main-container">
+        <h2 class="title">Contact Page</h2>
+        <!--CONTACT FORM-->
+        <section id="contact" class="contact section">
+            <form action="">
+                <label for="fname">First Name</label>
+                <input type="text" id="fname" name="Firstname" placeholder="Your Firstname" required>
+                <label for="lname">Last Name</label>
+                <input type="text" id="lname" name="Lastname" placeholder="Your Lastname" required>
+
+                <label for="country">Country</label>
+                <select name="country" id="country" required>
+                    <option value="India">India</option>
+                    <option value="australia">Australia</option>
+                    <option value="canada">Canada</option>
+                    <option value="usa">USA</option>
+                </select>
+                <label for="subject">Subject</label>
+                <textarea name="sub" id="subject" cols="30" rows="10" placeholder="Write Something..."></textarea>
+                <input type="submit" value="Submit">
+            </form>
+        </section>
+    </main>
+</body>
+
+</html>
